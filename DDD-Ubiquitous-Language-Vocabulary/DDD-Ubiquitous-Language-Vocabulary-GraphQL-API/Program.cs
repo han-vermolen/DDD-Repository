@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace DDD_Repository_GraphQL_API
+namespace DDD_Ubiquitous_Language_Vocabulary_GraphQL_API
 {
     public class Program
     {

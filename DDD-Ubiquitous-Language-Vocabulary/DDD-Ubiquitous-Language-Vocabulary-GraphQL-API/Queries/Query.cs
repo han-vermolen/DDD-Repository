@@ -1,4 +1,4 @@
-﻿namespace DDD_Repository_GraphQL_API.Queries
+﻿namespace DDD_Ubiquitous_Language_Vocabulary_GraphQL_API.Queries
 {
     public class Query
     {
