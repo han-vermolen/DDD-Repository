@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD-Repository-GraphQL-API", "DDD-Repository-GraphQL-API\DDD-Repository-GraphQL-API.csproj", "{5282075E-3984-4CB4-9A7E-1DF90B53299A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD-Ubiquitous-Language-Vocabulary-GraphQL-API", "DDD-Ubiquitous-Language-Vocabulary-GraphQL-API\DDD-Ubiquitous-Language-Vocabulary-GraphQL-API.csproj", "{5282075E-3984-4CB4-9A7E-1DF90B53299A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
