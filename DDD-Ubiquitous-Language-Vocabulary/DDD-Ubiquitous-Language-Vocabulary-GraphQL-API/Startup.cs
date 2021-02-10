@@ -1,4 +1,6 @@
+using DDD_Ubiquitous_Language_Vocabulary_GraphQL_API.Mutations;
 using DDD_Ubiquitous_Language_Vocabulary_GraphQL_API.Queries;
+using GraphQL.Server.Ui.Voyager;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -19,7 +21,10 @@ namespace DDD_Ubiquitous_Language_Vocabulary_GraphQL_API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddGraphQLServer()
-                .AddQueryType<Query>();
+                .AddQueryType<Query>()
+                .AddMutationType<Mutation>()
+                .AddFiltering()
+                .AddSorting();
         }
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -29,6 +34,12 @@ namespace DDD_Ubiquitous_Language_Vocabulary_GraphQL_API
             app.UseRouting();
 
             app.UseEndpoints(endpoints => { endpoints.MapGraphQL(); });
+
+            app.UseGraphQLVoyager(new GraphQLVoyagerOptions()
+            {
+                GraphQLEndPoint = "/graphql",
+                Path = "/graphql-voyager"
+            });
         }
     }
 }
